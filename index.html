@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>codernotes — a space for your thoughts and drafts</title>
+<meta name="description" content="A markdown notebook where every code block runs. Write the idea, try the snippet, keep the result — all in one plain .md file you own.">
+<meta name="theme-color" content="#0d1117">
+<meta property="og:title" content="codernotes — a space for your thoughts and drafts">
+<meta property="og:description" content="A markdown notebook where every code block runs. Native desktop app, no account, no telemetry, plain .md files.">
+<meta property="og:image" content="assets/app-dark.png">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap">
+    <a class="brand" href="./">
+      <img src="assets/mark.svg" alt="" width="26" height="26">
+      codernotes
+    </a>
+    <nav>
+      <a href="#why">Why</a>
+      <a href="#run">Languages</a>
+      <a href="#themes">Themes</a>
+      <a href="#keys">Shortcuts</a>
+      <a href="https://github.com/Tijani127/codernotes">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ------------------------------------------------------------- hero -->
+  <div class="wrap">
+    <div class="hero">
+      <span class="eyebrow">v0.1.0 &middot; MIT &middot; Windows, Linux, macOS</span>
+      <h1>A space for your <em>thoughts and drafts</em>.</h1>
+      <p class="lede">
+        codernotes is a markdown notebook where <strong>every code block runs</strong>.
+        Sketch the idea in prose, drop a fenced snippet underneath, hit
+        <strong>Run</strong>, and the output lands right there in the document —
+        no terminal, no second window, no copy-paste. Then you keep the file.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="#download">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1.5a.75.75 0 0 1 .75.75v6.69l2.22-2.22a.75.75 0 1 1 1.06 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-3.5-3.5a.75.75 0 0 1 1.06-1.06l2.22 2.22V2.25A.75.75 0 0 1 8 1.5Z"/><path d="M2.75 12a.75.75 0 0 1 .75.75v.5h9v-.5a.75.75 0 0 1 1.5 0v.75a1.25 1.25 0 0 1-1.25 1.25h-9.5A1.25 1.25 0 0 1 2 13.5v-.75a.75.75 0 0 1 .75-.75Z"/></svg>
+          Download
+        </a>
+        <a class="btn btn-ghost" href="https://github.com/Tijani127/codernotes">
+          <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+          Source
+        </a>
+      </div>
+      <p class="meta">One self-contained binary. SFML linked statically. Nothing else to install.</p>
+
+      <figure class="shot">
+        <img src="assets/app-dark.png" width="1600" height="900"
+             alt="codernotes showing a markdown note on the left with two runnable code blocks, and the rendered preview on the right.">
+        <figcaption>Markdown on the left, rendered preview on the right, output inline.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <!-- -------------------------------------------------------------- why -->
+  <section id="why">
+    <div class="wrap">
+      <h2>Notes and code usually live apart</h2>
+      <p class="sub">
+        A thought gets written in one app, the snippet gets pasted into a terminal,
+        the output gets pasted back, and by then the thread of reasoning is gone.
+        codernotes keeps the whole loop in one document.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <span class="num">01</span>
+          <h3>Prose and code, one file</h3>
+          <p>Every fenced block becomes its own editor with syntax highlighting,
+             line numbers and a caret. The paragraph above it is still prose.</p>
+        </div>
+        <div class="card">
+          <span class="num">02</span>
+          <h3>Run without leaving</h3>
+          <p>Output streams back underneath the block that produced it, with the
+             exit code and how long it took. <kbd>F5</kbd> runs the block under
+             your caret, so you can iterate in place.</p>
+        </div>
+        <div class="card">
+          <span class="num">03</span>
+          <h3>You own the file</h3>
+          <p>Notes are plain <code>.md</code> on disk, autosaved. No database, no
+             proprietary format, no account, no sync service, no telemetry.
+             Delete the app and your writing is still readable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------- demo -->
+  <section>
+    <div class="wrap">
+      <h2>It looks like this</h2>
+      <p class="sub">
+        A draft, mid-thought, with a snippet you are still arguing with. The
+        markers stay dim in the editor; the preview shows what it will become.
+      </p>
+      <div class="md-demo">
+        <div>
+          <div class="lbl">editor</div>
+          <pre class="src"><span class="tok-mk">## </span><span class="tok-hd">Sorting, take four</span>
+
+<span class="tok-com">// the previous version mutated the input</span>
+<span class="tok-key">def</span> <span class="tok-fn">sorted_copy</span>(items):
+    <span class="tok-key">return</span> <span class="tok-fn">sorted</span>(items[:])
+
+<span class="tok-key">print</span>(<span class="tok-fn">sorted_copy</span>([<span class="tok-num">3</span>, <span class="tok-num">1</span>, <span class="tok-num">2</span>]))</pre>
+        </div>
+        <div>
+          <div class="lbl">what you get</div>
+          <pre><span class="tok-hd">Sorting, take four</span>
+
+<span class="tok-mk">▸</span> <span class="tok-ok">exit 0  0.03s</span>          <span class="tok-run">▶ Run</span>
+
+<span class="tok-key">def</span> <span class="tok-fn">sorted_copy</span>(items):
+    <span class="tok-key">return</span> <span class="tok-fn">sorted</span>(items[:])
+
+<span class="tok-key">print</span>(<span class="tok-fn">sorted_copy</span>([<span class="tok-num">3</span>, <span class="tok-num">1</span>, <span class="tok-num">2</span>]))
+[<span class="tok-num">1</span>, <span class="tok-num">2</span>, <span class="tok-num">3</span>]</pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------- run -->
+  <section id="run">
+    <div class="wrap">
+      <h2>19 languages, whatever you already have</h2>
+      <p class="sub">
+        codernotes shells out to the toolchain on your <code>PATH</code>. It does
+        not bundle compilers or ship a sandbox, so there is nothing to install
+        beyond what you already use. A missing toolchain shows up as a non-zero
+        exit in the block's output rather than a silent failure.
+      </p>
+      <div class="chips">
+        <span class="chip">JavaScript</span>
+        <span class="chip">TypeScript</span>
+        <span class="chip">Python</span>
+        <span class="chip">C</span>
+        <span class="chip">C++</span>
+        <span class="chip">Java</span>
+        <span class="chip">Go</span>
+        <span class="chip">Rust</span>
+        <span class="chip">Ruby</span>
+        <span class="chip">shell</span>
+        <span class="chip">Lua</span>
+        <span class="chip">PowerShell</span>
+        <span class="chip">PHP</span>
+        <span class="chip">Swift</span>
+        <span class="chip">Kotlin</span>
+        <span class="chip">Zig</span>
+        <span class="chip">Dart</span>
+        <span class="chip">R</span>
+        <span class="chip">SQL</span>
+      </div>
+      <p class="note">
+        TypeScript shells out to <code>npx --yes tsx</code>, so it needs network
+        access the first time. SQL runs through the <code>sqlite3</code> shell.
+      </p>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------- themes -->
+  <section id="themes">
+    <div class="wrap">
+      <h2>Four themes, one keystroke</h2>
+      <p class="sub">
+        <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd> cycles them and the
+        choice is remembered between launches. Each one is a full palette —
+        backgrounds, borders, syntax colours, selection and shadows — not an
+        inverted filter.
+      </p>
+      <div class="themes">
+        <div class="theme">
+          <svg class="swatch" viewBox="0 0 200 86" aria-hidden="true">
+            <rect width="200" height="86" fill="#0d1117"/>
+            <rect x="0" y="0" width="46" height="86" fill="#11151d"/>
+            <rect x="52" y="14" width="92" height="58" rx="4" fill="#12171f" stroke="#262e3a"/>
+            <rect x="52" y="14" width="92" height="16" rx="4" fill="#191f2b"/>
+            <rect x="60" y="38" width="52" height="4" fill="#8b98a5"/>
+            <rect x="60" y="48" width="38" height="4" fill="#6b7883"/>
+            <rect x="60" y="58" width="46" height="4" fill="#6b7883"/>
+            <rect x="152" y="38" width="40" height="4" fill="#58a6ff"/>
+            <rect x="152" y="48" width="28" height="4" fill="#9ece6a"/>
+          </svg>
+          <div class="cap"><b>Midnight</b>Default. Deep blue-black.</div>
+        </div>
+        <div class="theme">
+          <svg class="swatch" viewBox="0 0 200 86" aria-hidden="true">
+            <rect width="200" height="86" fill="#121214"/>
+            <rect x="0" y="0" width="46" height="86" fill="#18181b"/>
+            <rect x="52" y="14" width="92" height="58" rx="4" fill="#18181c" stroke="#303036"/>
+            <rect x="52" y="14" width="92" height="16" rx="4" fill="#212125"/>
+            <rect x="60" y="38" width="52" height="4" fill="#d6d6d2"/>
+            <rect x="60" y="48" width="38" height="4" fill="#747470"/>
+            <rect x="60" y="58" width="46" height="4" fill="#747470"/>
+            <rect x="152" y="38" width="40" height="4" fill="#f0b678"/>
+            <rect x="152" y="48" width="28" height="4" fill="#a8c482"/>
+          </svg>
+          <div class="cap"><b>Graphite</b>Neutral grey, one warm accent.</div>
+        </div>
+        <div class="theme">
+          <svg class="swatch" viewBox="0 0 200 86" aria-hidden="true">
+            <rect width="200" height="86" fill="#2e3440"/>
+            <rect x="0" y="0" width="46" height="86" fill="#3b4252"/>
+            <rect x="52" y="14" width="92" height="58" rx="4" fill="#353c4a" stroke="#4e5668"/>
+            <rect x="52" y="14" width="92" height="16" rx="4" fill="#404759"/>
+            <rect x="60" y="38" width="52" height="4" fill="#d8dee9"/>
+            <rect x="60" y="48" width="38" height="4" fill="#7a8496"/>
+            <rect x="60" y="58" width="46" height="4" fill="#7a8496"/>
+            <rect x="152" y="38" width="40" height="4" fill="#88c0d0"/>
+            <rect x="152" y="48" width="28" height="4" fill="#a3be8c"/>
+          </svg>
+          <div class="cap"><b>Nord</b>Cool and low contrast.</div>
+        </div>
+        <div class="theme">
+          <svg class="swatch" viewBox="0 0 200 86" aria-hidden="true">
+            <rect width="200" height="86" fill="#f4f5f8"/>
+            <rect x="0" y="0" width="46" height="86" fill="#eef0f4"/>
+            <rect x="52" y="14" width="92" height="58" rx="4" fill="#f6f7fa" stroke="#d6dae2"/>
+            <rect x="52" y="14" width="92" height="16" rx="4" fill="#ebedf3"/>
+            <rect x="60" y="38" width="52" height="4" fill="#2d323a"/>
+            <rect x="60" y="48" width="38" height="4" fill="#7c8694"/>
+            <rect x="60" y="58" width="46" height="4" fill="#7c8694"/>
+            <rect x="152" y="38" width="40" height="4" fill="#1a69e0"/>
+            <rect x="152" y="48" width="28" height="4" fill="#14803d"/>
+          </svg>
+          <div class="cap"><b>Daylight</b>Light, tuned separately.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- --------------------------------------------------------------- keys -->
+  <section id="keys">
+    <div class="wrap">
+      <h2>The keys you already expect</h2>
+      <p class="sub">Nothing clever. The shortcuts are the conventional ones.</p>
+      <div class="keys">
+        <div><span>Run the block under the caret</span> <span><kbd>F5</kbd> <kbd>Ctrl+Enter</kbd></span></div>
+        <div><span>New note</span> <span><kbd>Ctrl+N</kbd></span></div>
+        <div><span>Save now (also autosaves)</span> <span><kbd>Ctrl+S</kbd></span></div>
+        <div><span>Toggle the preview pane</span> <span><kbd>Ctrl+P</kbd></span></div>
+        <div><span>Cycle colour theme</span> <span><kbd>Ctrl+Shift+T</kbd></span></div>
+        <div><span>Bold / italic</span> <span><kbd>Ctrl+B</kbd> <kbd>Ctrl+I</kbd></span></div>
+        <div><span>Toggle comment</span> <span><kbd>Ctrl+/</kbd></span></div>
+        <div><span>Undo / redo</span> <span><kbd>Ctrl+Z</kbd> <kbd>Ctrl+Shift+Z</kbd></span></div>
+        <div><span>Clear selection, or leave search</span> <span><kbd>Esc</kbd></span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ----------------------------------------------------------- download -->
+  <section id="download">
+    <div class="wrap">
+      <h2>Download v0.1.0</h2>
+      <p class="sub">
+        A single self-contained executable with SFML linked statically. Unzip or
+        untar, run it, done. Notes are created in a <code>notes/</code> folder
+        next to wherever you launch it from.
+      </p>
+      <div class="dl">
+        <a class="dl-card" href="https://github.com/Tijani127/codernotes/releases/download/v0.1.0/codernotes-windows-x64.zip">
+          <b>Windows</b>
+          <span>x64 &middot; .zip &middot; 688 KB</span>
+          <em>Download &rarr;</em>
+        </a>
+        <a class="dl-card" href="https://github.com/Tijani127/codernotes/releases/download/v0.1.0/codernotes-linux-x64.tar.gz">
+          <b>Linux</b>
+          <span>x86-64 &middot; .tar.gz &middot; 675 KB</span>
+          <em>Download &rarr;</em>
+        </a>
+        <a class="dl-card" href="https://github.com/Tijani127/codernotes/releases/download/v0.1.0/codernotes-macos-arm64.tar.gz">
+          <b>macOS</b>
+          <span>Apple Silicon &middot; .tar.gz &middot; 328 KB</span>
+          <em>Download &rarr;</em>
+        </a>
+      </div>
+      <p class="note">
+        Built on Ubuntu 24.04, so the Linux binary needs glibc 2.39 or newer. The
+        macOS build is unsigned, so Gatekeeper will ask you to right-click &rarr;
+        Open the first time. Intel Macs are not covered by this release.
+      </p>
+    </div>
+  </section>
+
+  <!-- -------------------------------------------------------------- build -->
+  <section>
+    <div class="wrap">
+      <h2>Build it yourself</h2>
+      <p class="sub">
+        You need <a href="https://xmake.io">xmake</a> and a C++17 compiler. SFML
+        is fetched for you.
+      </p>
+<pre class="build"><span class="c"># from a clone of the repository</span>
+xmake f -m release
+xmake
+./build/linux/x86_64/release/codernotes   <span class="c"># or the platform equivalent</span></pre>
+      <p class="sub" style="margin-bottom:0">
+        There is also <code>--selftest</code>, which runs 32 assertions over
+        layout, input, persistence and themes against a real GL context.
+        <a href="https://github.com/Tijani127/codernotes#readme">Read the README</a>
+        for the full flag list.
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>codernotes &mdash; MIT licensed. Built with C++17 and SFML 3.</span>
+    <span class="sep">
+      <a href="https://github.com/Tijani127/codernotes">Source</a> &middot;
+      <a href="https://github.com/Tijani127/codernotes/releases">Releases</a> &middot;
+      <a href="https://github.com/Tijani127/codernotes/issues">Issues</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>

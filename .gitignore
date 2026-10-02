@@ -1,0 +1,9 @@
+# Render checks produced while iterating on the design
+render-*.png
+check-*.png
+
+# Editors and OS cruft
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
